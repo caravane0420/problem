@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>랜덤 넌센스</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        var p = new Array('문제1');
+        var a =  new Array('정답1');
+        var h = new Array('힌트1');
+        function text(a,b,c){
+            var random = {
+                _1 : a[Math.floor(Math.random() * a.length)],
+                _2 : b[Math.floor(Math.random() * b.length)],
+                _3 : c[Math.floor(Math.random() * c.length)]
+            }
+            return random
+        }
+        document.write(text(p,a,h));
+        </script>
+    </body>
+</html>
